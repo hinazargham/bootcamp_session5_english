@@ -1,7 +1,7 @@
 import React , {useContext} from 'react';
 import ValueContext from './ValueContext';
 
-function Child() {
+function Child2() {
     let value =useContext(ValueContext);
     console.log("value ", value);
     let updateValue = value[1];
@@ -17,4 +17,4 @@ function Child() {
     )
 }
 
-export default Child;
+export default Child2;
