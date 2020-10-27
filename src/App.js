@@ -1,16 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Parent from'./Parent.js'
+import Parent from'./Parent.js';
+import ValueContext from './ValueContext';
+
 
 function App() {
 
-  let [number, setNumber] = useState(23);
+  //let [number, setNumber] = useState(23);
+  let value= 81;
   return (
-    <div>
+
+    <ValueContext.Provider value={value}>
+      <div>
       <h2> Hello from App.js </h2>
-      <Parent num ={number}></Parent>
-      <button onClick={()=>{ setNumber(++number) }}>Update Number</button>
+      <Parent></Parent>
+      
     </div>
+    </ValueContext.Provider>
+    
   );
 }
 
