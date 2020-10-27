@@ -1,4 +1,5 @@
-import React from 'react';
+import React , {useState} from 'react';
+
 import './App.css';
 import Parent from'./Parent.js';
 import ValueContext from './ValueContext';
@@ -6,8 +7,10 @@ import ValueContext from './ValueContext';
 
 function App() {
 
-  //let [number, setNumber] = useState(23);
-  let value= 81;
+  //Now we add Update Value feature in this branch
+
+  let value= useState(50);
+
   return (
 
     <ValueContext.Provider value={value}>

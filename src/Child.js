@@ -3,9 +3,16 @@ import ValueContext from './ValueContext';
 
 function Child() {
     let value =useContext(ValueContext);
+    console.log("value ", value);
+    let updateValue = value[1];
     return (
         <div>
-            <h3> Child <br/> Child numbers: {value}</h3>
+            <h3> 
+            Child
+            <br/> 
+            Child numbers: {value} <button onClick= {()=>{ updateValue(++value[0])}}>Update value</button>
+            </h3>
+            
         </div>
     )
 }
