@@ -8,9 +8,9 @@ function Child2() {
     return (
         <div>
             <h3> 
-            Child
+            Child 1 ( using useContext)
             <br/> 
-            Child numbers: {value} <button onClick= {()=>{ updateValue(++value[0])}}>Update value</button>
+            Child numbers: {value} <button class="btn1" onClick= {()=>{ updateValue(++value[0])}}>Update value by 1</button>
             </h3>
             
         </div>
